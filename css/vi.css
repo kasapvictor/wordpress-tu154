@@ -1,0 +1,167 @@
+/* asale */
+form.form-card-asale {
+    display: block;
+}
+
+.img-card_bg {
+    cursor: pointer;
+}
+
+.asale-product-preview {
+    text-align: center;
+    cursor: pointer;
+}
+
+.asale-product-preview:hover {
+    color: #f43131cf;
+}
+
+.asale-product-preview .ico {
+    display: inline-block;
+    transform: translate(-3px, 2px);
+}
+
+
+.asale-card-product {
+/*cursor: pointer;*/
+}
+
+.asale-loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.asale-loader .ico {
+    transform: scale(.7);
+}
+
+.asale-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.wrap-asale-product {
+    width: 720px;
+    min-height: 320px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.asale-product-title {
+    margin-bottom: 15px;
+}
+
+.asale-product-title h2 {
+    font-size: 26px;
+    line-height: 1;
+    margin-top: 0px;
+}
+
+.asale-product-image {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.wrap-asale-product-cost {
+    margin-bottom: 15px;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.asale-product-description {
+    max-height: 150px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+.asale-product-link {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.asale-product-link:hover {
+    color: #f43131cf;
+}
+
+.asale-product-link .ico {
+    display: inline-block;
+    transform: translate(-1px, 3px);
+}
+
+.asale-button-close {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    right: 20px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.asale-button-close:hover {
+    opacity: 1;
+}
+
+.asale-bg-close {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* media asale-popup */
+@media screen and (max-width: 600px) {
+    .wrap-asale-product {
+        width: 90%;
+        min-height: 220px;
+    }
+
+    .asale-product-image {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 15px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrap-asale-product {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .asale-product-image {
+        height: 200px;
+    }
+}
